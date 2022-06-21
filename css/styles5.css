@@ -1,0 +1,52 @@
+@keyframes move {
+    0% {
+        bottom: 400px;
+        left: 0px;
+        animation-timing-function: linear;
+    }
+    1% {
+        bottom: 400px;
+        animation-timing-function: ease-in;
+    }
+    30% {
+        bottom: 0px;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        bottom: 300px;
+        animation-timing-function: ease-in;
+    }
+    70% {
+        bottom: 0px;
+        animation-timing-function: ease-out;
+    }
+    85% {
+        bottom: 150px;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        bottom: 0px;
+        left: 300px;
+    }
+}
+
+#ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: coral;
+    box-shadow: 0 0 5px yellow;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#basket {
+    width: 500px;
+    height: 500px;
+    border: 1px solid violet;
+    position: relative;
+}

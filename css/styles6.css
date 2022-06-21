@@ -1,0 +1,55 @@
+#container {
+    width: 800px;
+    height: 600px;
+    background-image: url(../images/backgr-img.jpg);
+    margin: 0 auto;
+    display: flex;
+}
+
+#Sun {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background-image: url(../images/solntse_one-750x422.png);
+    background-position: center;
+    position: relative;
+    margin: auto;
+
+}
+
+#Earth {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: 330px;
+    background-position: center;
+    position: absolute;
+    top: 85px;
+    left: 130%;
+    animation: moveEarth 10s linear infinite;
+}
+
+@keyframes rotateEarth {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moveEarth {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: -200px center;
+        background-image: url(../images/Earth.jpg);
+    }
+    50% {
+        background-image: url(../images/Earth\ night.jpg);
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: -200px center;
+        background-image: url(../images/Earth.jpg);
+    }
+}
